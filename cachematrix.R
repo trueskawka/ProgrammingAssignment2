@@ -1,4 +1,7 @@
-## This function creates a list of four functions - set, get, setinverse and getinverse.
+##The purpose of this assignment is to create a pair of functions that cache the inverse of a matrix.
+
+##makeCacheMatrix
+##This function creates a list of four functions - set, get, setinverse and getinverse.
 ##Input x must be a square, invertible matrix.
 ##To call and use this function, simply input the matrix and assign the function output to a variable,
 ##eg. a <- makeCacheMatrix(matrix(c(2,4,3,1), nrow=2, ncol=2)).
@@ -37,7 +40,8 @@ makeCacheMatrix <- function(x = matrix()) {
              setinverse = setinverse,
              getinverse = getinverse)
 }
-	
+
+##cacheSolve
 ##This function returns the inverse of a matrix given on input in makeCacheMatrix(x).
 ##If a value is assigned to inverse, it returns it.
 ##Otherwise it calculates it.
